@@ -39,11 +39,11 @@ Atributos que são modificados:
 ## Flags
 - '-L': faz com que o 'stat' siga o link simbólico e mostre informações sobre o arquivo alvo.
 - '-c': formata o output, eu escolho quais e em que ordem serão exibidas
-  > '%n': nome do arquivo
-  > '%s': tamanho do arquivo em bytes
-  > '%y': ultima data e hora de modificação
-  > '%a': permissões do arquivo em formato numérico(755)
-  > '%A': permissões em formato de texto(rwxr-xr-x)
-  > '%G': nome do grupo do arquivo
+  - '%n': nome do arquivo
+  - '%s': tamanho do arquivo em bytes
+  - '%y': ultima data e hora de modificação
+  - '%a': permissões do arquivo em formato numérico(755)
+  - '%A': permissões em formato de texto(rwxr-xr-x)
+  - '%G': nome do grupo do arquivo
 
 O comando 'stat' é usado para exibir informações detalhadas sobre arquivos ou diretórios.
