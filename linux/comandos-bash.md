@@ -15,7 +15,6 @@
 
 Sempre que eu uso o 'cp' *sem nenhuma flag*, ele **altera todas** as informações do item
 copiado, desfaz os links, muda as permissões, etc...
-<br>
 
 # Comando 'touch'
 
@@ -23,7 +22,7 @@ copiado, desfaz os links, muda as permissões, etc...
 - '-a': atualiza apenas o tempo de acesso
 - '-m': atualiza apenas o tempo de modificação
 - '-d': especifica uma data e hora pespecíficas para os timestamps.
-- '-r': user os timestamps de putro arquivo como referência para atualizar os timestamps do arquivo atual
+- '-r': user os timestamps de outro arquivo como referência para atualizar os timestamps do arquivo atual
 
 
 A Real função do comando 'touch' é atualizar os timestamps de arquivos existentes para o tempo atual,
@@ -47,3 +46,35 @@ Atributos que são modificados:
   - '%G': nome do grupo do arquivo
 
 O comando 'stat' é usado para exibir informações detalhadas sobre arquivos ou diretórios.
+
+
+# Comando 'mv'
+
+## Flags
+'-f': força a mudança de diretório
+'-i': modo interativo, irá me perguntar se eu quero mesmo executar aquela ação
+
+O comando 'mv' serve tanto para mover arquivos e diretórios para outro lugar como para renomea-los
+
+
+# Comando 'rmdir'
+
+O comando 'rmdir' remove diretórios **VAZIOS**
+
+
+# Comando 'mkdir'
+
+## Flags
+'-m': força a definição de permiçções(exemplo 755)
+'-p': cria uma arvore de diretórios
+
+O comando 'mkdir' serve para criar diretórios vazios.
+
+# Comando 'rm'
+
+## Flags
+'-f': força a deleção do item
+'-r': exclui de forma recurssiva
+
+O comando 'rm' remove arquivos, se eu não passar nenhuma flag ele sempre vai perguntar se eu quero remover o item.
+O 'rm' também pode remover diretórios que não estão vazios, usando as flags '-rf'
