@@ -38,3 +38,8 @@
 
   São as mesmas coisas dos diretório acima, porem focado no usuário.
 
+- **/var/(variaveis)**: É o diretório que vai conter:
+  - /cache/
+  - /log/(informações de log do sistema e serviços)
+  - /spoll/(relacionado a impresoras)
+  - /tmp/(arquivos temporários)
