@@ -15,6 +15,7 @@ A **base hexadecimal** ,ou *sistema de base 16*, utiliza os dígitos de 0 a 9 e 
 
 - A base binária é um sistema posicional de nueração que conta com dois símbolos, *0* e *1*. 
 - Representação de números decimais, binários e bytes.
+
 | Decimal | Binário | Byte     |
 |---------|---------|----------|
 | 0       | 0       | 00000000 |
@@ -150,18 +151,11 @@ Então, 11868 em decimal é igual a 2E5C em hexadecimal.
 
 A soma de números binários segue o mesmo princípio da soma de números decimais, porem como só temos 2 símbolos(0 e 1) 1 + 1 = 1 seguido de 0.
 
-Exemplo:
-  1001
-+ 0101
--------
-  1110
+Exemplo: 1001 + 0101 = 1110
 
 Precisamos considerar que em um sistema com 8 bits, não seria possível somar 10000000 + 10000000, sendo necessário 9 bits para armazenar o número obtido, ultrapassando o limite do sistema, causando inconsistências no valor.
 
-  10000000
-+ 10000000
-----------
- 100000000
+  10000000 + 10000000 = 100000000
 
 Porem como o sistema é 8 bits o valor armazenado será os primeiros 8 dígitos da direita para a esquerda resultando no valor 00000000 ao invés de 100000000.
 
@@ -184,10 +178,7 @@ Exemplo:
 - 11111011 + 1 = 11111100
 
 calculo final:
-  11111011
-+        1
------------
-  11111100
+  11111011 + 1 = 11111100
 
 ### Subtração de binários
 Exemplo 5 - 4:
