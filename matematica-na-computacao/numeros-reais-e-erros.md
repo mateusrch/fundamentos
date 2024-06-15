@@ -32,3 +32,9 @@ A notação científica é útil para representar números muito grandes ou muit
 - quando o expoente for positivo, deslocamos a vírgula da esquerda para a direita.
 
 ## Formas simples, dupla ou estendida
+
+- Representação simples: **32 bits** em que *o primeiro bit está associado ao sinal* do número(0 para positivo e 1 para ngativo), *os 8 bits seguintes se referem ao expoente* que podem variar de **-126 até 127** e os **23 bits restantes correspondem a mantissa**.
+
+| sinal | expoente | mantissa                |
+|--------------------------------------------|
+| 1     | 11111111 | 11111111111111111111111 |
