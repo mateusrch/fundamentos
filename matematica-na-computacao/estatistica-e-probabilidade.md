@@ -105,3 +105,91 @@ func main() {
 }
 
 ```
+
+# Estatistica(Variância, desvio-padrão)
+- **Variância Populacional:** A variância populacional mede a dispersão de um conjunto de dados em relação à média da população inteira. É calculada somando-se os quadrados das diferenças entre cada valor e a média, e dividindo-se pelo número total de valores na população.
+
+A fórmula para a variância populacional (\(\sigma^2\)) é:
+$$
+\sigma^2 = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}
+$$
+
+onde:
+
+- \( x_i \) são os valores do conjunto de dados.
+- \( \mu \) é a média dos valores.
+- \( N \) é o número total de valores na população.
+
+- **Variância Amostral:** A variância amostral é usada quando se calcula a variância de uma amostra de uma população. É semelhante à variância populacional, mas para compensar o fato de estarmos lidando com uma amostra e não com a população inteira, dividimos pela quantidade de valores na amostra menos um.
+
+A fórmula para a variância amostral (\(s^2\)) é:
+$$
+s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}
+$$
+
+onde:
+
+- \( x_i \) são os valores do conjunto de dados.
+- \( \bar{x} \) é a média dos valores da amostra.
+- \( n \) é o número de valores na amostra.
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+// Função para calcular a média
+func calculateMean(numbers []float64) float64 {
+	sum := 0.0
+	for _, number := range numbers {
+		sum += number
+	}
+	return sum / float64(len(numbers))
+}
+
+// Função para calcular a variância populacional
+func calculatePopulationVariance(numbers []float64) float64 {
+	mean := calculateMean(numbers)
+	sumOfSquares := 0.0
+	for _, number := range numbers {
+		difference := number - mean
+		sumOfSquares += difference * difference
+	}
+	return sumOfSquares / float64(len(numbers))
+}
+
+// Função para calcular a variância amostral
+func calculateSampleVariance(numbers []float64) float64 {
+	mean := calculateMean(numbers)
+	sumOfSquares := 0.0
+	for _, number := range numbers {
+		difference := number - mean
+		sumOfSquares += difference * difference
+	}
+	return sumOfSquares / float64(len(numbers)-1)
+}
+
+func main() {
+	// Exemplo de uso
+	numbers := []float64{4, 1, 2, 2, 3, 4, 4, 5, 6, 6, 6}
+	populationVariance := calculatePopulationVariance(numbers)
+	sampleVariance := calculateSampleVariance(numbers)
+	fmt.Printf("A variância populacional é: %.2f\n", populationVariance)
+	fmt.Printf("A variância amostral é: %.2f\n", sampleVariance)
+}
+
+```
+
+# Desvio padrão
+
+- Nada mais é do que obter a raiz quadrada do resultado da variancia populacional ou amostral
+- Caso a população seja pequena(30 itens ou menos) devo utilizar a formula da variacia amostral ao inves da populacional
+- para obter um faixa de de resultados, somamos o desvio-padrao com a media e diminuimos a media do desvio-padrao
+
+--- media + desvio padrão
+
+--- media    a maior parte dos dados está dentro dessa faixa
+
+--- media - desvio-padrao
