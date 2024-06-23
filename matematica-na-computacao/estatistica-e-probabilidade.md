@@ -193,3 +193,68 @@ func main() {
 --- media    a maior parte dos dados está dentro dessa faixa
 
 --- media - desvio-padrao
+
+# Probabilidade
+A fórmula da probabilidade é:
+
+$$
+P(A) = \frac{n}{N}
+$$
+
+onde:
+- \( n \) é o número de eventos favoráveis (casos de interesse).
+- \( N \) é o número total de eventos possíveis (espaço amostral).
+
+Exemplo:
+Em uma produção de 1000 peças, 14 delas apresentaram defeito. Qual a probabilidade de que uma dessas peças, escolhida aleatoriamente, **não** apresente defeito?
+
+1. Eliminar as peças que já tem defeito -> 1000 - 14 = 986
+2. formula $$ P(A) = \frac{986}{1000} $$
+3. P(A) = 0,986
+4. P(A) = 0,986 x 100 = 98,6%
+
+**A probabilidade de pegar uma peça NÃO defeituosa é de 98,6%**
+
+# Distribuição normal
+- Quando a concentração de dados em torno média do que os dados que estão distantes da média, eu tenho uma **distribuição normal**.
+- graficamente chamado de **curva de gauss** ou **curva de sino**
+- aproximadamente 50% dos dados abaixo da média e 50% dos dados a cima da média
+
+### Parametrização
+![Gráfico de Gauss](https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_normal#/media/Ficheiro:Gauss_reduite.svg)
+
+- -3 é a média - 3 x desvio-padrao
+- -2 é a média -  2 x desvio-padrao
+- -1 é a média - desvio-padrao
+- 0 é a média
+- 1 é a média + desvio-padrao
+- 2 é a média + 2 x desvio-padrao
+
+Para converter um valor \( x \) de uma distribuição normal em um valor \( z \) de uma distribuição normal padrão (com média 0 e desvio padrão 1), usamos a fórmula:
+
+$$
+z = \frac{x - \mu}{\sigma}
+$$
+
+onde:
+- \( x \) é o valor da variável.
+- \( \mu \) é a média da distribuição.
+- \( \sigma \) é o desvio padrão da distribuição.
+
+### Exemplo Prático
+
+Suponha que temos uma distribuição normal com média \( \mu = 100 \) e desvio padrão \( \sigma = 15 \). Queremos calcular o valor \( z \) correspondente a \( x = 130 \).
+
+Usamos a fórmula:
+
+$$
+z = \frac{x - \mu}{\sigma}
+$$
+
+Substituindo os valores:
+
+$$
+z = \frac{130 - 100}{15} = \frac{30}{15} = 2
+$$
+
+Portanto, o valor \( z \) correspondente a \( x = 130 \) é 2.
