@@ -258,3 +258,34 @@ z = \frac{130 - 100}{15} = \frac{30}{15} = 2
 $$
 
 Portanto, o valor \( z \) correspondente a \( x = 130 \) é 2.
+
+# Estatistica indutiva(amostragem)
+
+- Uma amostra é considerada como *aleátoria simples* quando toda a amostra possível de mesmo tamanho tem as mesmas chances de ser selecionada.
+
+- Uma *amostra estratificada*  é utilizada quando precisamos de elementos de diferentes segmentos da população. A população é dividida em grupos denominados "estratos", e as amostras são obtidas aleatoriamente a partir de cada estrato.
+
+# Formula de Slovin
+
+A fórmula de Slovin é dada por:
+
+\[ n = \frac{N}{1 + N e^2} \]
+
+onde:
+- \( n \) é o tamanho da amostra,
+- \( N \) é o tamanho da população,
+- \( e \) é a margem de erro desejada.
+
+A fórmula de Slovin é uma ferramenta prática para determinar o tamanho da amostra de uma população quando se deseja ter um certo nível de confiança e uma margem de erro específica. É importante lembrar que a precisão dos resultados depende de uma aplicação correta da fórmula e da compreensão dos parâmetros envolvidos.
+
+# Estatistica indutiva(confiança)
+
+A fórmula para o intervalo de confiança em estatística indutiva é dada por:
+
+\[ \bar{x} \pm Z \left( \frac{\sigma}{\sqrt{n}} \right) \]
+
+onde:
+- \( \bar{x} \) é a média da amostra,
+- \( Z \) é o valor crítico da distribuição normal (Z-score) correspondente ao nível de confiança desejado,
+- \( \sigma \) é o desvio padrão da população,
+- \( n \) é o tamanho da amostra.
