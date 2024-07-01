@@ -20,6 +20,14 @@ A mantissa (ou significando) em matemática refere-se à parte de um número que
 
 \[ N = M \times 10^E \]
 
+Exemplo: *normalização científica*
+- Manter 1 dpigito na mantissa
+- 210,687 = 2,10687 x 10^2 *exemplo de normalização, deixando 1 digito antes da vírgula*
+- 3242 = 3,242 x 10^3 *a virgula foi deslocada 3 casas para que a normalização ocorra*
+
+Exemplo: *escrever na forma decimal os npumeros que estão na notação científica*
+- 5,4323 x 10^5 = 5,4323 x 100000 = 543230
+
 Onde:
 
 - \( N \) é o número original.
@@ -28,8 +36,21 @@ Onde:
 
 A notação científica é útil para representar números muito grandes ou muito pequenos de uma maneira compacta e padronizada.
 
-- quando o expoente for negativo, deslocamos a vírgula da direita para a esquerda
-- quando o expoente for positivo, deslocamos a vírgula da esquerda para a direita.
+### Notação científica em Python
+```py
+a = 3242
+print('%.10e' % a) # 3.2420000000+03
+
+b = 0.23241
+print('%.4e' % a) # 2.3241e-01, definindo 4 casas decimais.
+
+# 0,0000054 = 5,4 x 10^-6
+c = 0.0000054
+print('%.4e' % c) # 5.4000e-06
+```
+
+- **quando o expoente for negativo, deslocamos a vírgula da direita para a esquerda**
+- **quando o expoente for positivo, deslocamos a vírgula da esquerda para a direita.**
 
 ## Formas simples, dupla ou estendida
 
